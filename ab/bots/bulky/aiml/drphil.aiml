@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: drphil.aiml -->
+<!-- Author: Vernon -->
+<!-- Last modified: November 05, 2016 -->
+<!--  -->
+<!-- This AIML file is part of the BULKY unknown chat bot knowledge base. -->
+<!--  -->
+<!-- The BULKY brain is Copyright &copy; 2016 by Advanced Product Solutions. -->
+<!--  -->
+<!-- The BULKY brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.bulktoiletpaper.com -->
+<category><pattern>PERSONALITY TEST</pattern>
+<template><think>
+	<set name="score">0</set>
+</think>
+This is a test made up of 10 simple multiple choice questions that will help you see what sort of personality you have.<br/><br/>Type START to begin the test.</template>
+</category>
+<category><pattern>START</pattern><that>TYPE START TO BEGIN THE TEST</that>
+<template><srai>ptquestion1</srai></template>
+</category>
+<category><pattern>PTBADCHOICE</pattern>
+<template>There is no option "<get name="choice"/>" for this question. Please try again or type QUIT to finish the test.<br/><br/></template>
+</category>
+<category><pattern>PTQUESTION1</pattern>
+<template><think>
+	<set name="topic">perstest</set>
+</think>
+1. When do you feel at your best?<br/><br/>
+A) In the morning.<br/>
+B) During the afternoon and early evening.<br/>
+C) Late at night.<br/><br/>
+Please answer either A, B or C for question 1 or QUIT to finish the test.</template>
+</category>
+<topic name="PERSTEST">
+<category><pattern>_</pattern><that>_ ANSWER * FOR QUESTION 1 OR QUIT TO FINISH THE TEST</that>
+<template><think>
+	<set name="topic"/>
+	<set name="choice"><star/></set>
+</think>
+	<condition name="choice">
+		<li value="A"><srai>PTADD1</srai><srai>PTADD1</srai><srai>ptquestion2</srai></li>
+		<li value="B"><srai>PTADD3</srai><srai>PTADD1</srai><srai>ptquestion2</srai></li>
+		<li value="C"><srai>PTADD3</srai><srai>PTADD3</srai><srai>ptquestion2</srai></li>
+		<li value="QUIT">Ok. What would you like to do now?</li>
+		<li><srai>ptbadchoice</srai><srai>ptquestion1</srai></li>
+	</condition></template>
+</category></topic>
+
+<category><pattern>PTQUESTION2</pattern>
+<template><think>
+	<set name="topic">perstest</set>
+</think>
+2. You usually walk...<br/><br/>
+A) fairly fast, with long steps.<br/>
+B) fairly fast, with little steps.<br/>
+C) less fast, head up, looking the world in the face.<br/>
+D) less fast, head down.<br/>
+E) Very slowly.<br/><br/>
+Please answer either A, B, C, D or E for question 2 or QUIT to finish the test.</template>
+</category>
+<topic name="PERSTEST">
+<category><pattern>_</pattern><that>_ ANSWER * FOR QUESTION 2 OR QUIT TO FINISH THE TEST</that>
+<template><think>
+	<set name="topic"/>
+	<set name="choice"><star/></set>
+</think>
+	<condition name="choice">
+		<li value="A"><srai>PTADD3</srai><srai>PTADD3</srai><srai>ptquestion3</srai></li>
+		<li value="B"><srai>PTADD3</srai><srai>PTADD1</srai><srai>ptquestion3</srai></li>
+		<li value="C"><srai>PTADD3</srai><srai>PTADD3</srai><srai>PTADD1</srai><srai>ptquestion3</srai></li>
+		<li value="D"><srai>PTADD1</srai><srai>PTADD1</srai><srai>ptquestion3</srai></li>
+		<li value="E"><srai>PTADD1</srai><srai>ptquestion3</srai></li>
+		<li value="QUIT">Ok. What would you like to do now?</li>
+		<li><srai>ptbadchoice</srai><srai>ptquestion2</srai></li>
+	</condition></template>
+</category></topic>
+
+<category><pattern>PTQUESTION3</pattern>
+<template><think>
+	<set name="topic">perstest</set>
+</think>
+3. When talking to people, you...<br/><br/>
+A) Stand with your arms folded.<br/>
+B) have your hands clasped.<br/>
+C) have one or both your hands on your hips or in pockets.<br/>
+D) touch or push the person to whom you are talking.<br/>
+E) play with your ear, touch your chin or smooth your hair.<br/><br/>
+Please answer either A, B, C, D or E for question 3 or QUIT to finish the test.</template>
+</category>
+<topic name="PERSTEST">
+<category><pattern>_</pattern><that>_ ANSWER * FOR QUESTION 3 OR QUIT TO FINISH THE TEST</that>
+<template><think>
+	<set name="topic"/>
+	<set name="choice"><star/></set>
+</think>
+	<condition name="choice">
+		<li value="A"><srai>PTADD3</srai><srai>PTADD1</srai><srai>ptquestion4</srai></li>
+		<li value="B"><srai>PTADD1</srai><srai>PTADD1</srai><srai>ptquestion4</srai></li>
+		<li value="C"><srai>PTADD3</srai><srai>PTADD1</srai><srai>PTADD1</srai><srai>ptquestion4</srai></li>
+		<li value="D"><srai>PTADD3</srai><srai>PTADD3</srai><srai>PTADD1</srai><srai>ptquestion4</srai></li>
+		<li value="E"><srai>PTADD3</srai><srai>PTADD3</srai><srai>ptquestion4</srai></li>
+		<li value="QUIT">Ok. What would you like to do now?</li>
+		<li><srai>ptbadchoice</srai><srai>ptquestion3</srai></li>
+	</condition></template>
+</category></topic>
+
+<category><pattern>PTQUESTION4</pattern>
+<template><think>
+	<set name="topic">perstest</set>
+</think>
+4. When relaxing, you sit with...<br/><br/>
+A) Your knees bent with your legs neatly side by side.<br/>
+B) Your legs crossed.<br/>
+C) your legs stretched out or straight.<br/>
+D) one leg curled under you.<br/><br/>
+Please answer either A, B, C or D for question 4 or QUIT to finish the test.</template>
+</category>
+<topic name="PERSTEST">
+<category><pattern>_</pattern><that>_ ANSWER * FOR QUESTION 4 OR QUIT TO FINISH THE TEST</that>
+<template><think>
+	<set name="topic"/>
+	<set name="choice"><star/></set>
+</think>
+	<condition name="choice">
+		<li value="A"><srai>PTADD3</srai><srai>PTADD1</srai><srai>ptquestion5</srai></li>
+		<li value="B"><srai>PTADD3</srai><srai>PTADD3</srai><srai>ptquestion5</srai></li>
+		<li value="C"><srai>PTADD1</srai><srai>PTADD1</srai><srai>ptquestion5</srai></li>
+		<li value="D"><srai>PTADD1</srai><srai>ptquestion5</srai></li>
+		<li value="QUIT">Ok. What would you like to do now?</li>
+		<li><srai>ptbadchoice</srai><srai>ptquestion4</srai></li>
+	</condition></template>
+</category></topic>
+
+<category><pattern>PTQUESTION5</pattern>
+<template><think>
+	<set name="topic">perstest</set>
+</think>
+5. When something really amuses you, you react with...<br/><br/>
+A) a big appreciated laugh.<br/>
+B) a laugh, but not a loud one.<br/>
+C) a quiet chuckle.<br/>
+D) a sheepish smile.<br/><br/>
+Please answer either A, B, C or D for question 5 or QUIT to finish the test.</template>
+</category>
+<topic name="PERSTEST">
+<category><pattern>_</pattern><that>_ ANSWER * FOR QUESTION 5 OR QUIT TO FINISH THE TEST</that>
+<template><think>
+	<set name="topic"/>
+	<set name="choice"><star/></set>
+</think>
+	<condition name="choice">
+		<li value="A"><srai>PTADD3</srai><srai>PTADD1</srai><srai>PTADD1</srai><srai>ptquestion6</srai></li>
+		<li value="B"><srai>PTADD3</srai><srai>PTADD1</srai><srai>ptquestion6</srai></li>
+		<li value="C"><srai>PTADD3</srai><srai>ptquestion6</srai></li>
+		<li value="D"><srai>PTADD1</srai><srai>PTADD1</srai><srai>ptquestion6</srai></li>
+		<li value="QUIT">Ok. What would you like to do now?</li>
+		<li><srai>ptbadchoice</srai><srai>ptquestion5</srai></li>
+	</condition></template>
+</category></topic>
+
+<category><pattern>PTQUESTION6</pattern>
+<template><think>
+	<set name="topic">perstest</set>
+</think>
+6. When you got to a party or social gathering, you...<br/><br/>
+A) make a loud entrance so everyone notices you.<br/>
+B) make a quiet entrance, looking around for someone you know.<br/>
+C) make the quietest entrance, trying to stay unnoticed.<br/><br/>
+Please answer either A, B or C for question 6 or QUIT to finish the test.</template>
+</category>
+<topic name="PERSTEST">
+<category><pattern>_</pattern><that>_ ANSWER * FOR QUESTION 6 OR QUIT TO FINISH THE TEST</that>
+<template><think>
+	<set name="topic"/>
+	<set name="choice"><star/></set>
+</think>
+	<condition name="choice">
+		<li value="A"><srai>PTADD3</srai><srai>PTADD3</srai><srai>ptquestion7</srai></li>
+		<li value="B"><srai>PTADD3</srai><srai>PTADD1</srai><srai>ptquestion7</srai></li>
+		<li value="C"><srai>PTADD1</srai><srai>PTADD1</srai><srai>ptquestion7</srai></li>
+		<li value="QUIT">Ok. What would you like to do now?</li>
+		<li><srai>ptbadch

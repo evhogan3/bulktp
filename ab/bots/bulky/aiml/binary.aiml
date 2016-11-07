@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<!-- File: binary.aiml -->
+<!-- Author: Vernon -->
+<!-- Last modified: November 05, 2016 -->
+<!--  -->
+<!-- This AIML file is part of the BULKY unknown chat bot knowledge base. -->
+<!--  -->
+<!-- The BULKY brain is Copyright &copy; 2016 by Advanced Product Solutions. -->
+<!--  -->
+<!-- The BULKY brain is released under the terms of the GNU Lesser General -->
+<!-- Public License, as published by the Free Software Foundation. -->
+<!--  -->
+<!-- This file is distributed WITHOUT ANY WARRANTY; without even the  -->
+<!-- implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.   -->
+<!--  -->
+<!-- For more information see http://www.bulktoiletpaper.com -->
+<category><pattern>WHAT IS _ IN BINARY *</pattern>
+<template><srai>XBINARY<star/></srai></template>
+</category>
+<category><pattern>IN BINARY * WHAT IS *</pattern>
+<template><srai>XBINARY<star index="2"/></srai></template>
+</category>
+<category><pattern>WHAT IS _ IN BINARY</pattern>
+<template><srai>XBINARY<star/></srai></template>
+</category>
+<category><pattern>IN BINARY WHAT IS *</pattern>
+<template><srai>XBINARY<star/></srai></template>
+</category>
+<category><pattern>WHAT IS THE NUMBER * IN BINARY</pattern>
+<template><srai>XBINARY<star/></srai></template>
+</category>
+<category><pattern>IN BINARY WHAT IS THE NUMBER *</pattern>
+<template><srai>XBINARY<star/></srai></template>
+</category>
+<category><pattern>WHAT IS NUMBER * IN BINARY</pattern>
+<template><srai>XBINARY<star/></srai></template>
+</category>
+<category><pattern>IN BINARY WHAT IS NUMBER *</pattern>
+<template><srai>XBINARY<star/></srai></template>
+</category>
+<category><pattern>WHAT IS THE NUMBER * IN BINARY *</pattern>
+<template><srai>XBINARY<star/></srai></template>
+</category>
+<category><pattern>IN BINARY * WHAT IS THE NUMBER *</pattern>
+<template><srai>XBINARY<star index="2"/></srai></template>
+</category>
+<category><pattern>WHAT IS NUMBER * IN BINARY *</pattern>
+<template><srai>XBINARY<star/></srai></template>
+</category>
+<category><pattern>IN BINARY * WHAT IS NUMBER *</pattern>
+<template><srai>XBINARY<star index="2"/></srai></template>
+</category>
+<category><pattern>XBINARY *</pattern>
+<template>Sorry I can only count up to 255 in binary but I would imagine<person/>would be "1001111010110001".</template>
+</category>
+<category><pattern>XBINARY NUMBER *</pattern>
+<template><srai>XBINARY<star/></srai></template>
+</category>
+<category><pattern>XBINARY THE NUMBER *</pattern>
+<template><srai>XBINARY<star/></srai></template>
+</category>
+<category><pattern>XBINARY 0</pattern>
+<template>0.</template>
+</category>
+<category><pattern>XBINARY 1</pattern>
+<template>1.</template>
+</category>
+<category><pattern>XBINARY 2</pattern>
+<template>10.</template>
+</category>
+<category><pattern>XBINARY 3</pattern>
+<template>11.</template>
+</category>
+<category><pattern>XBINARY 4</pattern>
+<template>100.</template>
+</category>
+<category><pattern>XBINARY 5</pattern>
+<template>101.</template>
+</category>
+<category><pattern>XBINARY 6</pattern>
+<template>110.</template>
+</category>
+<category><pattern>XBINARY 7</pattern>
+<template>111.</template>
+</category>
+<category><pattern>XBINARY 8</pattern>
+<template>1000.</template>
+</category>
+<category><pattern>XBINARY 9</pattern>
+<template>1001.</template>
+</category>
+<category><pattern>XBINARY 10</pattern>
+<template>1010.</template>
+</category>
+<category><pattern>XBINARY 11</pattern>
+<template>1011.</template>
+</category>
+<category><pattern>XBINARY 12</pattern>
+<template>1100.</template>
+</category>
+<category><pattern>XBINARY 13</pattern>
+<template>1101.</template>
+</category>
+<category><pattern>XBINARY 14</pattern>
+<template>1110.</template>
+</category>
+<category><pattern>XBINARY 15</pattern>
+<template>1111.</template>
+</category>
+<category><pattern>XBINARY 16</pattern>
+<template>10000.</template>
+</category>
+<category><pattern>XBINARY 17</pattern>
+<template>10001.</template>
+</category>
+<category><pattern>XBINARY 18</pattern>
+<template>10010.</template>
+</category>
+<category><pattern>XBINARY 19</pattern>
+<template>10011.</template>
+</category>
+<category><pattern>XBINARY 20</pattern>
+<template>10100.</template>
+</category>
+<category><pattern>XBINARY 21</pattern>
+<template>10101.</template>
+</category>
+<category><pattern>XBINARY 22</pattern>
+<template>10110.</template>
+</category>
+<category><pattern>XBINARY 23</pattern>
+<template>10111.</template>
+</category>
+<category><pattern>XBINARY 24</pattern>
+<template>11000.</template>
+</category>
+<category><pattern>XBINARY 25</pattern>
+<template>11001.</template>
+</category>
+<category><pattern>XBINARY 26</pattern>
+<template>11010.</template>
+</category>
+<category><pattern>XBINARY 27</pattern>
+<template>11011.</template>
+</category>
+<category><pattern>XBINARY 28</pattern>
+<template>11100.</template>
+</category>
+<category><pattern>XBINARY 29</pattern>
+<template>11101.</template>
+</category>
+<category><pattern>XBINARY 30</pattern>
+<template>11110.</template>
+</category>
+<category><pattern>XBINARY 31</pattern>
+<template>11111.</template>
+</category>
+<category><pattern>XBINARY 32</pattern>
+<template>100000.</template>
+</category>
+<category><pattern>XBINARY 33</pattern>
+<template>100001.</template>
+</category>
+<category><pattern>XBINARY 34</pattern>
+<template>100010.</template>
+</category>
+<category><pattern>XBINARY 35</pattern>
+<template>100011.</template>
+</category>
+<category><pattern>XBINARY 36</pattern>
+<template>100100.</template>
+</category>
+<category><pattern>XBINARY 37</pattern>
+<template>100101.</template>
+</category>
+<category><pattern>XBINARY 38</pattern>
+<template>100110.</template>
+</category>
+<category><pattern>XBINARY 39</pattern>
+<template>100111.</template>
+</category>
+<category><pattern>XBINARY 40</pattern>
+<template>101000.</template>
+</category>
+<category><pattern>XBINARY 41</pattern>
+<template>101001.</template>
+</category>
+<category><pattern>XBINARY 42</pattern>
+<template>101010.</template>
+</category>
+<category><pattern>XBINARY 43</pattern>
+<template>101011.</template>
+</category>
+<category><pattern>XBINARY 44</pattern>
+<template>101100.</template>
+</category>
+<category><pattern>XBINARY 45</pattern>
+<template>101101.</template>
+</category>
+<category><pattern>XBINARY 46</pattern>
+<template>101110.</template>
+</category>
+<category><pattern>XBINARY 47</pattern>
+<template>101111.</template>
+</category>
+<category><pattern>XBINARY 48</pattern>
+<template>110000.</template>
+</category>
+<category><pattern>XBINARY 49</pattern>
+<template>110001.</template>
+</category>
+<category><pattern>XBINARY 50</pattern>
+<template>110010.</template>
+</category>
+<category><pattern>XBINARY 51</pattern>
+<template>110011.</template>
+</category>
+<category><pattern>XBINARY 52</pattern>
+<template>110100.</template>
+</category>
+<category><pattern>XBINARY 53</pattern>
+<template>110101.</template>
+</category>
+<category><pattern>XBINARY 54</pattern>
+<template>110110.</template>
+</category>
+<category><pattern>XBINARY 55</pattern>
+<template>110111.</template>
+</category>
+<category><pattern>XBINARY 56</pattern>
+<template>111000.</template>
+</category>
+<category><pattern>XBINARY 57</pattern>
+<template>111001.</template>
+</category>
+<category><pattern>XBINARY 58</pattern>
+<template>111010.</template>
+</category>
+<category><pattern>XBINARY 59</pattern>
+<template>111011.</template>
+</category>
+<category><pattern>XBINARY 60</pattern>
+<template>111100.</template>
+</category>
+<category><pattern>XBINARY 61</pattern>
+<template>111101.</template>
+</category>
+<category><pattern>XBINARY 62</pattern>
+<template>111110.</template>
+</category>
+<category><pattern>XBINARY 63</pattern>
+<template>111111.</template>
+</category>
+<category><pattern>XBINARY 64</pattern>
+<template>1000000.</template>
+</category>
+<category><pattern>XBINARY 65</pattern>
+<template>1000001.</template>
+</category>
+<category><pattern>XBINARY 66</pattern>
+<template>1000010.</template>
+</category>
+<category><pattern>XBINARY 67</pattern>
+<template>1000011.</template>
+</category>
+<category><pattern>XBINARY 68</pattern>
+<template>1000100.</template>
+</category>
+<category><pattern>XBINARY 69</pattern>
+<template>1000101.</template>
+</category>
+<category><pattern>XBINARY 70</pattern>
+<te

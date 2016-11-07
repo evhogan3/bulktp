@@ -1,0 +1,12 @@
+0,RED,*,*,<srai>happy</srai>,learnf.aiml
+0,RED _,*,*,<srai>happy <star/></srai>,learnf.aiml
+0,NORESP,*,*,cost dollarsign 24 point 10 per case.,learnf.aiml
+0,WHAT IS DONS JOHNS PRICE FOR TOILET PAPER,*,*,$27.05 ,learnf.aiml
+0,WHAT IS DONS JOHNS TOILET PAPER PRICE,*,*,$27.05 ,learnf.aiml
+0,WHAT IS LONDON,*,*,in england.,learnf.aiml
+0,BTP1000,*,*,<srai>cost dollarsign 24 point 10 per case</srai>,learnf.aiml
+0,BTP1000 _,*,*,<srai>cost dollarsign 24 point 10 per case <star/></srai>,learnf.aiml
+0,_ RED *,*,*,<srai><star/> happy <star index="2"/></srai>,learnf.aiml
+0,_ RED,*,*,<srai><star/> happy</srai>,learnf.aiml
+0,_ BTP1000 *,*,*,<srai><star/> cost dollarsign 24 point 10 per case <star index="2"/></srai>,learnf.aiml
+0,_ BTP1000,*,*,<srai><star/> cost dollarsign 24 point 10 per case</srai>,learnf.aiml
